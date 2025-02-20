@@ -16,10 +16,10 @@ app.get('/', function(req,res){
         {name: 'Bloody Mary', drunknes:3},
         {name: 'Martini', drunknes:5},
         {name: 'Scotch', drunknes:10},
-    ]
+    ];
     var tagline= "any code of your own that you havent looked at for six or mre months might as well have been written by someone else.";
 
-    res.render('lab-14/index',{
+    res.render('pages/index',{
         drinks: drinks,
         tagline: tagline
     });
@@ -27,7 +27,7 @@ app.get('/', function(req,res){
 
 //about page 
 app.get('/about',function(req, res){
-    res.render('lab-14/about')
+    res.render('pages/about')
 });
 
 app.listen(8080);
